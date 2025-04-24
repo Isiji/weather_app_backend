@@ -14,7 +14,7 @@ class WeatherController extends Controller
         $lon = $request->query('lon');
         $units = $request->query('units', 'metric'); // default to metric
         $city = $request->query('city');
-        $apiKey = env('OPENWEATHERMAP_API_KEY');
+        $apiKey = env('OPENWEATHER_API_KEY');
 
         \Log::info("Using API key: $apiKey");
 
